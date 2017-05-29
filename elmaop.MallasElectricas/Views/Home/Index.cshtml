@@ -8,10 +8,210 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>Mallas Electricas</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        #bg_malla {
+            background-image: url('../../Resources/bg_malla_crop.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            min-height: 300px;
+        }
+        div{
+            text-align: center;
+        }
+        .flex {
+            display: flex;
+            justify-content: center; /* align horizontal */
+            align-items: center; /* align vertical */
+        }
+        p{
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <div> 
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-md-2">
+                <button class="btn btn-lg btn-primary">Calcular</button>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <p>R1</p>
+                <div class="form-group">
+                    <label class="col-form-label">::R1::</label>
+                    <div class="input-group">
+                        <input type="number" value="" class="form-control" id="r1" placeholder="Ingrese R1" />
+                        <span class="input-group-addon">
+                            <select class="" id="r1-unidad">
+                                <option selected value="1">Ω</option>
+                                <option value="1000">kΩ</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <p>R2</p>
+                <div class="form-group">
+                    <label class="col-form-label">::R2::</label>
+                    <div class="input-group">
+                        <input type="number" value="" class="form-control" id="r2" placeholder="Ingrese R2" />
+                        <span class="input-group-addon">
+                            <select class="" id="r2-unidad">
+                                <option selected value="1">Ω</option>
+                                <option value="1000">kΩ</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <p>R5</p>
+                <div class="form-group">
+                    <label class="col-form-label">::R5::</label>
+                    <div class="input-group">
+                        <input type="number" value="" class="form-control" id="r5" placeholder="Ingrese R5" />
+                        <span class="input-group-addon">
+                            <select class="" id="r5-unidad">
+                                <option selected value="1">Ω</option>
+                                <option value="1000">kΩ</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row flex">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <p>V1</p>
+                <div class="form-group">
+                    <label class="col-form-label">::V1::</label>
+                    <div class="input-group">
+                        <input type="number" value="" class="form-control" id="v1" placeholder="Ingrese V1" />
+                        <span class="input-group-addon" id="basic-addon2">V</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 flex" id="bg_malla" >
+                <div class="col-md-4">
+                    <p>R3</p>
+                    <div class="form-group col-md-offset-3">
+                        <label class="col-form-label">::R3::</label>
+                        <div class="col-md-10 col-md-offset-3 input-group">
+                            <input type="number" value="" class="form-control" id="r3" placeholder="Ingrese R3" />
+                            <span class="input-group-addon">
+                                <select class="" id="r3-unidad">
+                                    <option selected value="1">Ω</option>
+                                    <option value="1000">kΩ</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <p>R4</p>
+                    <div class="form-group col-md-offset-3">
+                        <label class="col-form-label">::R4::</label>
+                        <div class="col-md-10 input-group">
+                            <input type="number" value="" class="form-control" id="r4" placeholder="Ingrese R4" />
+                            <span class="input-group-addon">
+                                <select class="" id="r4-unidad">
+                                    <option selected value="1">Ω</option>
+                                    <option value="1000">kΩ</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="col-md-2">
+                <p>V3</p>
+                <div class="form-group">
+                    <label class="col-form-label">::V3::</label>
+                    <div class="input-group">
+                        <input type="number" value="" class="form-control" id="v3" placeholder="Ingrese V3" />
+                        <span class="input-group-addon" id="basic-addon2">V</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <p>R7</p>
+                <div class="form-group">
+                    <label class="col-form-label">::R7::</label>
+                    <div class="input-group">
+                        <input type="number" value="" class="form-control" id="r7" placeholder="Ingrese R7" />
+                        <span class="input-group-addon">
+                            <select class="" id="r7-unidad">
+                                <option selected value="1">Ω</option>
+                                <option value="1000">kΩ</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <p>V2</p>
+                <div class="form-group">
+                    <label class="col-form-label">::V2::</label>
+                    <div class="input-group">
+                        <input type="number" value="" class="form-control" id="v2" placeholder="Ingrese V2" />
+                        <span class="input-group-addon" id="basic-addon2">V</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <p>R6</p>
+                <div class="form-group">
+                    <label class="col-form-label">::R6::</label>
+                    <div class="input-group">
+                        <input type="number" value="" class="form-control" id="r6" placeholder="Ingrese R6" />
+                        <span class="input-group-addon">
+                            <select class="" id="r6-unidad">
+                                <option selected value="1">Ω</option>
+                                <option value="1000">kΩ</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <p>I1</p>
+            </div>
+            <div class="col-md-2">
+                <p>I2</p>
+            </div>
+            <div class="col-md-2">
+                <p>I3</p>
+            </div>
+
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
