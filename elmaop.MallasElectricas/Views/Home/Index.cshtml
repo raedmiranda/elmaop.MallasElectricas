@@ -30,21 +30,25 @@
         p{
             display: none;
         }
+        .show{
+            display: initial !important;
+            
+        }
     </style>
 </head>
 <body>
     <div class="container-fluid text-center">
         <div class="row">
             <div class="col-md-2">
-                <button class="btn btn-lg btn-primary">Calcular</button>
+                <button class="btn btn-lg btn-primary" id="submitForm">Calcular</button>
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-2">
                 <p>R1</p>
-                <div class="form-group">
+                <div class="form-group  col-md-offset-3">
                     <label class="col-form-label">::R1::</label>
-                    <div class="input-group">
-                        <input type="number" value="" class="form-control" id="r1" placeholder="Ingrese R1" />
+                    <div class="col-md-10 col-md-offset-1 input-group">
+                        <input type="number" value="" class="form-control" id="r1" placeholder="R1" />
                         <span class="input-group-addon">
                             <select class="" id="r1-unidad">
                                 <option selected value="1">Ω</option>
@@ -56,10 +60,10 @@
             </div>
             <div class="col-md-2">
                 <p>R2</p>
-                <div class="form-group">
+                <div class="form-group  col-md-offset-3">
                     <label class="col-form-label">::R2::</label>
-                    <div class="input-group">
-                        <input type="number" value="" class="form-control" id="r2" placeholder="Ingrese R2" />
+                    <div class="col-md-10 col-md-offset-1 input-group">
+                        <input type="number" value="" class="form-control" id="r2" placeholder="R2" />
                         <span class="input-group-addon">
                             <select class="" id="r2-unidad">
                                 <option selected value="1">Ω</option>
@@ -71,10 +75,10 @@
             </div>
             <div class="col-md-2">
                 <p>R5</p>
-                <div class="form-group">
+                <div class="form-group col-md-offset-3">
                     <label class="col-form-label">::R5::</label>
-                    <div class="input-group">
-                        <input type="number" value="" class="form-control" id="r5" placeholder="Ingrese R5" />
+                    <div class="col-md-10 col-md-offset-1 input-group">
+                        <input type="number" value="" class="form-control" id="r5" placeholder="R5" />
                         <span class="input-group-addon">
                             <select class="" id="r5-unidad">
                                 <option selected value="1">Ω</option>
@@ -90,10 +94,10 @@
             <div class="col-md-2"></div>
             <div class="col-md-2">
                 <p>V1</p>
-                <div class="form-group">
+                <div class="form-group  col-md-offset-3">
                     <label class="col-form-label">::V1::</label>
-                    <div class="input-group">
-                        <input type="number" value="" class="form-control" id="v1" placeholder="Ingrese V1" />
+                    <div class="input-group col-md-10 col-md-offset-1">
+                        <input type="number" value="" class="form-control" id="v1" placeholder="V1" />
                         <span class="input-group-addon" id="basic-addon2">V</span>
                     </div>
                 </div>
@@ -104,7 +108,7 @@
                     <div class="form-group col-md-offset-3">
                         <label class="col-form-label">::R3::</label>
                         <div class="col-md-10 col-md-offset-3 input-group">
-                            <input type="number" value="" class="form-control" id="r3" placeholder="Ingrese R3" />
+                            <input type="number" value="" class="form-control" id="r3" placeholder="R3" />
                             <span class="input-group-addon">
                                 <select class="" id="r3-unidad">
                                     <option selected value="1">Ω</option>
@@ -119,7 +123,7 @@
                     <div class="form-group col-md-offset-3">
                         <label class="col-form-label">::R4::</label>
                         <div class="col-md-10 input-group">
-                            <input type="number" value="" class="form-control" id="r4" placeholder="Ingrese R4" />
+                            <input type="number" value="" class="form-control" id="r4" placeholder="R4" />
                             <span class="input-group-addon">
                                 <select class="" id="r4-unidad">
                                     <option selected value="1">Ω</option>
@@ -133,10 +137,10 @@
             </div>
             <div class="col-md-2">
                 <p>V3</p>
-                <div class="form-group">
+                <div class="form-group col-md-8">
                     <label class="col-form-label">::V3::</label>
                     <div class="input-group">
-                        <input type="number" value="" class="form-control" id="v3" placeholder="Ingrese V3" />
+                        <input type="number" value="" class="form-control" id="v3" placeholder="V3" />
                         <span class="input-group-addon" id="basic-addon2">V</span>
                     </div>
                 </div>
@@ -147,10 +151,10 @@
             <div class="col-md-2"></div>
             <div class="col-md-2">
                 <p>R7</p>
-                <div class="form-group">
+                <div class="form-group  col-md-offset-3">
                     <label class="col-form-label">::R7::</label>
-                    <div class="input-group">
-                        <input type="number" value="" class="form-control" id="r7" placeholder="Ingrese R7" />
+                    <div class="col-md-10 col-md-offset-1 input-group">
+                        <input type="number" value="" class="form-control" id="r7" placeholder="R7" />
                         <span class="input-group-addon">
                             <select class="" id="r7-unidad">
                                 <option selected value="1">Ω</option>
@@ -162,20 +166,20 @@
             </div>
             <div class="col-md-2">
                 <p>V2</p>
-                <div class="form-group">
+                <div class="form-group col-md-offset-3">
                     <label class="col-form-label">::V2::</label>
-                    <div class="input-group">
-                        <input type="number" value="" class="form-control" id="v2" placeholder="Ingrese V2" />
+                    <div class="input-group col-md-10 col-md-offset-1">
+                        <input type="number" value="" class="form-control" id="v2" placeholder="V2" />
                         <span class="input-group-addon" id="basic-addon2">V</span>
                     </div>
                 </div>
             </div>
             <div class="col-md-2">
                 <p>R6</p>
-                <div class="form-group">
+                <div class="form-group col-md-offset-3">
                     <label class="col-form-label">::R6::</label>
-                    <div class="input-group">
-                        <input type="number" value="" class="form-control" id="r6" placeholder="Ingrese R6" />
+                    <div class="col-md-10 col-md-offset-1 input-group">
+                        <input type="number" value="" class="form-control" id="r6" placeholder="R6" />
                         <span class="input-group-addon">
                             <select class="" id="r6-unidad">
                                 <option selected value="1">Ω</option>
@@ -192,12 +196,33 @@
             <div class="col-md-2"></div>
             <div class="col-md-2">
                 <p>I1</p>
+                <div class="form-group">
+                    <label class="col-form-label">::I1::</label>
+                    <div class="input-group">
+                        <p class="form-control show" id="i1"></p>
+                        <span class="input-group-addon">A</span>
+                    </div>
+                </div>
             </div>
             <div class="col-md-2">
                 <p>I2</p>
+                <div class="form-group">
+                    <label class="col-form-label">::I2::</label>
+                    <div class="input-group">
+                        <p class="form-control show" id="i2"></p>
+                        <span class="input-group-addon">A</span>
+                    </div>
+                </div>
             </div>
             <div class="col-md-2">
                 <p>I3</p>
+                <div class="form-group">
+                    <label class="col-form-label">::I3::</label>
+                    <div class="input-group">
+                        <p class="form-control show" id="i3"></p>
+                        <span class="input-group-addon">A</span>
+                    </div>
+                </div>
             </div>
 
             <div class="col-md-2"></div>
@@ -213,5 +238,46 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            console.log("ready");
+            //$('#medio').on("change", function () {
+            //    var _medio = $('#medio option:selected').val();
+            //    //alert(_medio);
+            //    $('#constE').text(_medio);
+            //    //funciona
+            //});
+
+            $('#submitForm').on("click", function () {
+                var r1 = $('#r1').val();
+                var r1_u = $('#r1-unidad option:selected').val();
+                var r2 = $('#r2').val();
+                var r2_u = $('#r2-unidad option:selected').val();
+                var r3 = $('#r3').val();
+                var r3_u = $('#r3-unidad option:selected').val();
+                var r4 = $('#r4').val();
+                var r4_u = $('#r4-unidad option:selected').val();
+                var r5 = $('#r5').val();
+                var r5_u = $('#r5-unidad option:selected').val();
+                var r6 = $('#r6').val();
+                var r6_u = $('#r6-unidad option:selected').val();
+                var r7 = $('#r7').val();
+                var r7_u = $('#r7-unidad option:selected').val();
+
+                var v1 = $('#v1').val();
+                var v2 = $('#v2').val();
+                var v3 = $('#v3').val();
+                
+                //TEAM, DESARROLLEN LA LÓGICA PARA CALCULAR LAS INTENSIDADES DE CADA MALLA
+                var i1 = 10;
+                var i2 = 11;
+                var i3 = 21;
+
+                $('#i1').text(i1);
+                $('#i2').text(i2);
+                $('#i3').text(i3);
+            });
+        });
+    </script>
 </body>
 </html>
