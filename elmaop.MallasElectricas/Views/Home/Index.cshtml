@@ -268,7 +268,11 @@
                 var v3 = $('#v3').val();
                 
                 //TEAM, DESARROLLEN LA LÓGICA PARA CALCULAR LAS INTENSIDADES DE CADA MALLA
-                var i1 = 10;
+
+                var s = [(r1 * r1_u + r3 * r3_u + r7 * r7_u) * (-r2 * r2_u - r3 * r3_u + r4 * r4_u) * (-r4 * r4_u - r5 * r5_u - r6 * r6_u)] -
+                    [(r4 * r4_u) * (r4 * r4_u) * (r1 * r1_u + r3 * r3_u + r7 * r7_u) + (-r4 * r4_u - r5 * r5_u - r6 * r6_u) * (-r3 * r3_u) * (r3 * r3_u)];
+
+                var i1 = [(v1) * (-r2 * r2_u - r3 * r3_u + r4 * r4_u) * (-r4 * r4_u - r5 * r5_u - r6 * r6_u) + (-r3 * r3_u) * (r4 * r4_u) * v3] - [(v1 * (r4 * r4_u) * (r4 * r4_u)) + (-r3 * r3_u) * v2 * (-r4 * r4_u - r5 * r5_u - r6 * r6_u)];
                 var i2 = 11;
                 var i3 = 21;
 
