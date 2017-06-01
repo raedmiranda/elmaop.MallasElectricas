@@ -273,12 +273,16 @@
                     [(r4 * r4_u) * (r4 * r4_u) * (r1 * r1_u + r3 * r3_u + r7 * r7_u) + (-r4 * r4_u - r5 * r5_u - r6 * r6_u) * (-r3 * r3_u) * (r3 * r3_u)];
 
                 var i1 = [(v1) * (-r2 * r2_u - r3 * r3_u + r4 * r4_u) * (-r4 * r4_u - r5 * r5_u - r6 * r6_u) + (-r3 * r3_u) * (r4 * r4_u) * v3] - [(v1 * (r4 * r4_u) * (r4 * r4_u)) + (-r3 * r3_u) * v2 * (-r4 * r4_u - r5 * r5_u - r6 * r6_u)];
-                var i2 = 11;
-                var i3 = 21;
+                var i2 = [(r1 * r1_u + r3 * r3_u + r7 * r7_u) * v3 * (-r4 * r4_u - r5 * r5_u - r6 * r6_u)] - [(r4 * r4_u) * v3 * (r1 * r1_u + r3 * r3_u + r7 * r7_u) + (-r4 * r4_u - r5 * r5_u - r6 * r6_u) * v1 * (r3 * r3_u)];
+                var i3 = [(r1 * r1_u + r3 * r3_u + r7 * r7_u) * (-r2 * r2_u - r3 * r3_u + r4 * r4_u) * v3 + v1 * (r3 * r3_u) * (r4 * r4_u)] - [(r1 * r1_u + r3 * r3_u + r7 * r7_u) * v2 * (r4 * r4_u) + (-r3 * r3_u) * (r3 * r3_u) * v3];
 
-                $('#i1').text(i1);
-                $('#i2').text(i2);
-                $('#i3').text(i3);
+                var int1 = i1 / s;
+                var int2 = i2 / s;
+                var int3 = i3 / s;
+
+                $('#i1').text(int1);
+                $('#i2').text(int2);
+                $('#i3').text(int3);
             });
         });
     </script>
