@@ -1,0 +1,9 @@
+## Lista de Integrantes:
+- Junior Lujan Lujan
+- Raul Miranda Rios
+- Carlos Avalos Casachagua
+- Dustin Mimbela Vallejo
+- Joshe Villacorta Vidal
+
+## Sitio web:
+- http://mallaelectrica.azurewebsites.net/
